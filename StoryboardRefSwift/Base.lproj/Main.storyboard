@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Or6-nT-hUJ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="RBe-8J-hYM">
+            <objects>
+                <viewController id="mN6-jV-bDS" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nUk-4t-6oL"/>
+                        <viewControllerLayoutGuide type="bottom" id="yuQ-Kn-p2q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lgs-NV-eaN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRl-J6-eFs">
+                                <rect key="frame" x="20" y="89" width="560" height="30"/>
+                                <state key="normal" title="Trigger Login(Interface Reference)"/>
+                                <connections>
+                                    <segue destination="ls0-vD-NZL" kind="show" identifier="GoToLogin" id="kau-Rf-K8a">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vT-Y5-EHa">
+                                <rect key="frame" x="20" y="124" width="560" height="30"/>
+                                <state key="normal" title="Trigger Login Step 2(Interface Reference)"/>
+                                <connections>
+                                    <segue destination="L8V-Tc-wk9" kind="show" identifier="GoToLogin2" id="fUb-AK-XB7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgi-ni-7Cc">
+                                <rect key="frame" x="261" y="159" width="78" height="30"/>
+                                <state key="normal" title="Generic VC"/>
+                                <connections>
+                                    <segue destination="vc9-eR-Tbh" kind="show" id="zGX-B0-1rE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zRl-J6-eFs" firstAttribute="top" secondItem="nUk-4t-6oL" secondAttribute="bottom" constant="25" id="47t-Ki-u0F"/>
+                            <constraint firstAttribute="trailing" secondItem="5vT-Y5-EHa" secondAttribute="trailing" constant="20" id="53O-f5-xQV"/>
+                            <constraint firstItem="5vT-Y5-EHa" firstAttribute="top" secondItem="zRl-J6-eFs" secondAttribute="bottom" constant="5" id="9WS-EH-HFc"/>
+                            <constraint firstItem="tgi-ni-7Cc" firstAttribute="top" secondItem="5vT-Y5-EHa" secondAttribute="bottom" constant="5" id="Foq-da-1ia"/>
+                            <constraint firstAttribute="trailing" secondItem="zRl-J6-eFs" secondAttribute="trailing" constant="20" id="Rz1-QK-g34"/>
+                            <constraint firstItem="zRl-J6-eFs" firstAttribute="leading" secondItem="Lgs-NV-eaN" secondAttribute="leading" constant="20" id="SSH-D7-xBu"/>
+                            <constraint firstItem="tgi-ni-7Cc" firstAttribute="centerX" secondItem="Lgs-NV-eaN" secondAttribute="centerX" id="p4g-x0-bNc"/>
+                            <constraint firstItem="5vT-Y5-EHa" firstAttribute="leading" secondItem="Lgs-NV-eaN" secondAttribute="leading" constant="20" id="puV-UN-Ll4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="D59-xZ-Kr4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="169-pi-NGe" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="501" y="418"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="thJ-wO-bbK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="ls0-vD-NZL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sg5-m2-DAH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1240.5" y="132"/>
+        </scene>
+        <!--Login2-->
+        <scene sceneID="04b-CU-Rrf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" referencedIdentifier="Login2" id="L8V-Tc-wk9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GND-d4-IjA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1240.5" y="239"/>
+        </scene>
+        <!--Generic Vc-->
+        <scene sceneID="4gC-Sg-bYy">
+            <objects>
+                <viewController id="vc9-eR-Tbh" customClass="GenericVc" customModule="StoryboardRefSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vId-fK-qtP"/>
+                        <viewControllerLayoutGuide type="bottom" id="iDo-LB-E9z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Ex-6S-YAw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYV-tU-sEK">
+                                <rect key="frame" x="20" y="69" width="560" height="30"/>
+                                <state key="normal" title="Go to Login 1 (Any VC)"/>
+                                <connections>
+                                    <action selector="goToLogin1:" destination="vc9-eR-Tbh" eventType="touchUpInside" id="ncH-OW-0vy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olT-vO-Ega">
+                                <rect key="frame" x="20" y="119" width="560" height="30"/>
+                                <state key="normal" title="Go to Login 2(Any VC)"/>
+                                <connections>
+                                    <action selector="goToLogin2:" destination="vc9-eR-Tbh" eventType="touchUpInside" id="1Ar-ju-xNJ"/>
+                                    <action selector="jkhkjh:" destination="vc9-eR-Tbh" eventType="touchUpInside" id="3Jr-6f-opE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="XYV-tU-sEK" secondAttribute="trailing" constant="20" id="3xc-62-ugE"/>
+                            <constraint firstAttribute="trailing" secondItem="olT-vO-Ega" secondAttribute="trailing" constant="20" id="Lkd-LJ-Z2t"/>
+                            <constraint firstItem="XYV-tU-sEK" firstAttribute="leading" secondItem="1Ex-6S-YAw" secondAttribute="leading" constant="20" id="P0d-hQ-Kl4"/>
+                            <constraint firstItem="olT-vO-Ega" firstAttribute="top" secondItem="XYV-tU-sEK" secondAttribute="bottom" constant="20" id="PVm-CZ-gqg"/>
+                            <constraint firstItem="olT-vO-Ega" firstAttribute="leading" secondItem="1Ex-6S-YAw" secondAttribute="leading" constant="20" id="lFT-gr-7uQ"/>
+                            <constraint firstItem="XYV-tU-sEK" firstAttribute="top" secondItem="vId-fK-qtP" secondAttribute="bottom" constant="5" id="qrH-aX-OFX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lzS-yb-nHv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1368" y="914"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sC9-sD-uYK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Or6-nT-hUJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3ie-PT-IrR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mN6-jV-bDS" kind="relationship" relationship="rootViewController" id="4Bs-Wi-HgL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gVI-7P-jDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-151" y="437"/>
+        </scene>
+    </scenes>
+</document>
